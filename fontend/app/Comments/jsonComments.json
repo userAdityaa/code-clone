@@ -1,0 +1,45 @@
+{
+    "comments": [
+      {
+        "id": 1,
+        "author": "John Doe",
+        "tech_job": "Frontend Developer",
+        "content": "This project looks amazing! Great job!",
+        "timestamp": "2024-03-16T12:30:00Z"
+      },
+      {
+        "id": 2,
+        "author": "Jane Smith",
+        "tech_job": "UI/UX Designer",
+        "content": "I love the design and the functionality. Keep up the good work!",
+        "timestamp": "2024-03-16T13:15:00Z"
+      },
+      {
+        "id": 3,
+        "author": "Alex Johnson",
+        "tech_job": "Software Engineer",
+        "content": "This is really helpful! Thanks for sharing.",
+        "timestamp": "2024-03-16T14:00:00Z"
+      },
+      {
+        "id": 4,
+        "author": "Emily Brown",
+        "tech_job": "Backend Developer",
+        "content": "I'm having trouble with the third component. Any suggestions?",
+        "timestamp": "2024-03-16T14:45:00Z"
+      },
+      {
+        "id": 5,
+        "author": "David Lee",
+        "tech_job": "Full Stack Developer",
+        "content": "Check out the documentation for the component. It might help!",
+        "timestamp": "2024-03-16T15:00:00Z"
+      }
+      
+    ]
+  }
+  
+
+
+
+

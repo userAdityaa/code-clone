@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  nextapp:
+    container_name: nextapp
+    image: nextapp:1.0
+    build: 
+      context: ./fontend
+      dockerfile: next.dockerfile
+    ports: 
+      - 3000:3000
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - web
+  web: 
+    container_name: goSomething
+    build: .
+    env_file: 
+      - .env
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/usr/src/app
+    command: air run cmd/main.go -b 0.0.0.0
+  db: 
+    container_name: dbContainer
+    image: postgres:alpine
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASS}
+      - POSTGRES_DB=${DB_NAME}
+    ports: 
+      - 5432:5432
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+    
+volumes: 
+  postgres-db: 
